@@ -201,7 +201,44 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+# Node / React / frontend
+# ignore node_modules anywhere in the tree
+node_modules/
+**/node_modules/
+
+# Build outputs and frontend caches
+build/
+dist/
+out/
+public/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.gatsby/
+.vite/
+# Vite/parcel/etc may use these dirs
+/.turbo/
+.eslintcache
+
+# Environment files (some already present above; keep common ones)
+.env
+.env.local
+.env.*.local
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Optional lockfiles (usually tracked) — uncomment if you want to ignore them
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
